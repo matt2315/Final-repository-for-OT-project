@@ -1,0 +1,289 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../resources/mbg.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+/* OVERLAY */
+#movie_detail {
+  height: 100px;
+  width: 300px;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  margin-left: -150px;
+  margin-top: -50px;
+  background-color: red;
+
+}
+
+#history_detail {
+  height: 300px;
+  width: 500px;
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  margin-left: -250px;
+  margin-top: -150px;
+  background-color: green;
+  border-style: solid;
+  border-color: red;
+}
+
+
+#overlay {
+  top: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+
+#div-cart {
+  border: 1px gray solid;
+  position: absolute;
+  height: 100px;
+  top: 25px;
+  right: 100px;
+  overflow: auto;
+  width: 400px;
+  border-radius: 5px;
+}
+#div-cart p {
+  text-align: center;
+  margin: 0px;
+}
+#div-cart .ticket {
+  background-color: red;
+  margin: 5px;
+}
+#div-cart-refresh {
+  position: fixed;
+  top: 130px;
+  right: 405px;
+}
+#div-cart-purchase {
+  position: fixed;
+  top: 130px;
+  right: 100px;
+}
+
+.text {
+  color: red;
+}
+
+.pic {
+  align:center;
+  margin:0 auto;
+  width:1000px;
+}
+
+.pics{
+  float:left;
+}
+
+.fh{
+  color: white;
+  position: absolute;
+  left: 250px;
+  top:115px;
+}
+
+.fss{
+  color: white;
+  position: absolute;
+  right: 420px;
+  top:140px;
+}
+
+.fr{
+  color: white;
+  position: absolute;
+  left: 1780px;
+  top:140px;
+}
+
+.fl{
+  color: white;
+  position: absolute;
+  left: 95px;
+  top:115px;
+}
+
+.f1{
+  color: white;
+  position:fixed;
+  right: 1250px;
+  top:540px;
+}
+
+.f2{
+  color: white;
+  position: absolute;
+  left: 950px;
+  top:540px;
+}
+
+.f3{
+  color: white;
+  position: absolute;
+  left: 1250px;
+  top:540px;
+}
+
+.butt {
+  display: inline-block;
+  font-family: "Alegreya Sans SC";font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  padding: 0.8em 1.4em;
+  padding-right: 4.7em;
+  background: #009ED8;
+  border: none;
+  color: white;
+  transition: 0.2s;
+}
+
+.button:before {
+  background: rgba(0, 0, 0, 0.1);
+}
+.button:hover {
+  background: #0079a5;
+}
+.button:active,
+.button:focus {
+  background: #002e3f;
+
+}
+.button {
+
+}
+.arrow {
+  background: #FE5F55;
+}
+.arrow:hover {
+  background: #fe2f22;
+}
+.arrow:active,
+.arrow:focus {
+  background: #b90c01;
+}
+.arrow:after {
+  content: "\F054";
+}
+.arrow:hover:after {
+  -webkit-animation: bounceright 0.3s alternate ease infinite;
+  animation: bounceright 0.3s alternate ease infinite;
+}
+.phone {
+  background: #139675;
+}
+.phone:hover {
+  background: #0d6952;
+}
+.phone:active,
+.phone:focus {
+  background: #083b2e;
+}
+.phone:after {
+  content: "\F095";
+}
+.phone:hover:after {
+  -webkit-animation: wiggle 0.05s alternate ease infinite;
+  animation: wiggle 0.05s alternate ease infinite;
+}
+.email {
+  background: #C673B3;
+}
+.email:hover {
+  background: #b74f9f;
+}
+.email:active,
+.email:focus {
+  background: #963d82;
+}
+.email:after {
+  content: "\F0E0";
+}
+.email:hover:after {
+  -webkit-animation: none;
+  -webkit-transform: skew(-20deg);
+  animation: none;
+  transform: skew(-20deg);
+  text-indent: 0.1em;
+}
+
+.search {
+  background: #C673B3;
+}
+.search:hover {
+  background: #b74f9f;
+}
+.search:active,
+.search:focus {
+  background: #963d82;
+}
+.search:after {
+  content: "\f002";
+}
+.search:hover:after {
+  -webkit-animation: none;
+  -webkit-transform: scale(1.4);
+  animation: none;
+  transform: scale(1.4);
+}
+@-webkit-keyframes bounceright {
+  from {
+    -webkit-transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(3px);
+  }
+}
+@-webkit-keyframes wiggle {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(30deg);
+  }
+}
+@keyframes bounceright {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(3px);
+  }
+}
+@keyframes wiggle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+/*
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: #F8F8FF;
+}
+
+h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #F8F8FF;
+}
+*/
